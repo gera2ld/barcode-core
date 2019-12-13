@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>rcode</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectre.css@0.5.8/dist/spectre.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/barcode-core/dist/index.min.js"></script>
+</head>
+<body>
+  <div id="app" class="container">
+    <div class="form-control">
+      <input v-model="input" placeholder="Input 13 digits">
+    </div>
+    <canvas ref="canvas"></canvas>
+    <div class="text-error" v-text="error"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
